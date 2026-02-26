@@ -73,6 +73,7 @@ my-profail/
 
 | Project | Live Link |
 |---------|-----------|
+| column | [View →](https://hamza-leon120.github.io/column/) |
 | WiSchool | [View →](https://hamza-leon120.github.io/WiSchool/) |
 | ROLEX Website | [View →](https://hamza-leon120.github.io/ROLEX-website/) |
 | Velocity Sportswear Landing Page | [View →](https://hamza-leon120.github.io/-Velocity-Sportswear-Modern-Sportswear-Landing-Page/) |
