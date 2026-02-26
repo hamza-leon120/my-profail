@@ -1,0 +1,132 @@
+include ./include/_include
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        // icon
+        link(rel="stylesheet" href="./scss/all.min.css")
+        // normalize
+        link(rel="stylesheet" href="./scss/normalize.css")
+        // font 
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap' rel='stylesheet')
+        // style
+        link(rel="stylesheet" href="./scss/style.css")
+        title= "<HMZ />"
+    body 
+        header
+            .container
+                .logo
+                    p= "<HMZ />"
+                    p aymen 
+                nav 
+                    ul 
+                        li Home
+                        li About me
+                        li Skills
+                        li Works
+                        li Contact
+                    ul 
+                        li: i(class = "fa-brands fa-github")
+                        li: i(class = "fa-brands fa-facebook facebook")
+                        li: i(class = "fa-brands fa-instagram instagram")
+                i(class = "fa-solid fa-bars")
+        section(class = "Home")
+            .container 
+                .dev
+                    p developer
+                .information 
+                    .img 
+                    p aymen 
+                    p front-end developer
+                    +info("fa-regular fa-envelope","haaymen20@gmail.com")
+                    +info("fa-solid fa-location-dot","Algeria")
+                    +info("fa-solid fa-suitcase","Full-time / Freelancer")
+                    .skillss
+                        +skill-one("HTML")
+                        +skill-one("CSS")
+                        +skill-one("PUG")
+                        +skill-one("SCSS")
+                        +skill-one("JS")
+                        +skill-one("React")
+                .content 
+                    .left
+                        p(class = "ele" class= "top")= "<h1>"
+                        h1 Hey #[br] May name is #[span Aymen], #[br] I'm front-end developer
+                        p(class = "ele" class= "bottom")= "</h1>"
+                        p(class = "ele" class= "top")= "<p>"
+                        p I help business grow by crafting amazing web experiences. If you’re looking for a developer that likes to get stuff done,
+                        p(class = "ele" class= "bottom")= "</p>"
+                        .talk
+                            p let’s talk
+                            .email 
+                                i(class = "fa-regular fa-envelope")
+                    .right 
+                        +right("6","Programming Language")
+                        +right("6","Development Tools")
+                        +right("2","Years of Experience")
+        section(class = "About-me")
+            .container 
+                +start()
+                .about 
+                    p About me
+                .content 
+                    p(class = "ele" class= "top")= "<p>"
+                    p #[span Hello!] #[br] My name is #[span Aymen], and I’m a passionate front-end developer who enjoys building clean, modern, and responsive web interfaces using #[span HTML / Pug], #[span CSS / SCSS], and #[span JavaScript / React]. #[br] I love transforming ideas into interactive and visually appealing digital experiences. #[br] I’m highly motivated, detail-oriented, and constantly improving my skills through hands-on projects and real-world practice. I believe in writing organized, maintainable code and always push myself to learn new techniques and tools. #[br] When I’m not coding, you’ll usually find me exploring UI ideas, learning new design patterns, or improving my workflow. I enjoy challenging myself and discovering better ways to build fast and beautiful websites.
+                    p(class = "ele" class= "bottom")= "</p>"
+                .img
+        section(class = "Skills")
+            .back
+            .container 
+                +start()
+                +title("Skills")
+                p(class = "p-title") I am striving to never stop learning and improving
+                .field 
+                    i(class = "fa-solid fa-desktop")
+                    p web developement
+                    p HTML PUG CSS SCSS JS
+                .grid-skills 
+                    +skill-two("fa-brands fa-html5","HTML")
+                    .skill
+                        div 
+                            img(src="./img/pug.png", alt="")
+                        p PUG
+                    +skill-two("fa-brands fa-css3-alt","CSS")
+                    +skill-two("fa-brands fa-sass","SCSS")
+                    +skill-two("fa-brands fa-node-js","JS")
+                    +skill-two("fa-brands fa-react","React")
+        section(class = "Works")
+            .back
+            .container 
+                +start()
+                +title("Works")
+                p(class = "p-title") I had the pleasure of working with these awesome projects
+                .content
+                    .arrow.left
+                        i(class = "fa-solid fa-angle-left")
+                    .slide
+                        +project("./img/Screenshot.png","https://hamza-leon120.github.io/column/")
+                        +project("./img/Screensho-t.png","https://hamza-leon120.github.io/WiSchool/")
+                        +project("./img/Screenshot-light.png","https://hamza-leon120.github.io/ROLEX-website/")
+                        +project("./img/Screenshot.jpg","https://hamza-leon120.github.io/-Velocity-Sportswear-Modern-Sportswear-Landing-Page/")
+                        +project("./img/Screenshot-3.jpg","https://hamza-leon120.github.io/-Digital-Assessor/")
+                        +project("./img/Screenshot-2.jpg","https://hamza-leon120.github.io/TechInnov/")
+                    .arrow.right
+                        i(class = "fa-solid fa-angle-right")
+        section(class = "Contact")
+            .container 
+                +start()
+                +title("Contact")
+                p(class = "p-title") I'm always eager to explore new opportunities and take on exciting projects. If you have a project in mind, or just want to say hi, feel free to send me a message.
+                .send 
+                    p Send me a message
+                .socials
+                    +social("fa-regular fa-envelope","email")
+                    +social("fa-brands fa-facebook","facebook")
+                    +social("fa-brands fa-instagram","instagram")
+        .up 
+            i(class = "fa-solid fa-up-long")
+        script(src="./main.js") 
+

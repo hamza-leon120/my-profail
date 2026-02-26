@@ -1,0 +1,46 @@
+mixin info(i,info)
+    .info 
+        i(class = i)
+        p= info
+
+mixin skill-one(skill)
+    .skill 
+        p= skill
+
+mixin right(num,con)
+    div
+        p= num 
+        p= con
+
+mixin start()
+    .scroll-indicator
+        .mouse
+            .wheel
+        .line
+        .diamond
+
+mixin title(name)
+    .title
+        p= name
+        div
+
+mixin skill-two(i,skill)
+    .skill
+        div 
+            i(class = i)
+        p= skill
+
+mixin project(src,link)
+    .project 
+        img(src="./img/Dual-screen.jpg", alt="alt")
+        img(src="./img/Web-1.jpg", alt="" class = 'left')
+        img(src= src, alt="" class = 'right')
+        .link 
+            p: a(href = link) View Website
+            i(class = "fa-solid fa-arrow-pointer")
+
+mixin social(i,name)
+    div(class = "social" class = name)
+        i(class = i)
+        p= name
+        i(class = "fa-solid fa-arrow-right")
