@@ -8,9 +8,13 @@
 
 ---
 
-## 📸 Preview
+## 📸 Screenshots
 
-![Portfolio Preview](./img/Dual-screen.jpg)
+### 🖥️ Desktop Preview
+![Desktop Preview](/img/Screenshot.png)
+
+### 📱 Mobile View  
+![Mobile Preview](img/mobail-Screenshot.png)
 
 ---
 
